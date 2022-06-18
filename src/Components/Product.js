@@ -3,7 +3,7 @@ const Product = () => {
   const [color, setColor] = useState("red");
   return (
     <div className="bg-white rounded-md shadow-md p-2">
-      <div className="bg-slate-300 rounded-md px-6 flex justify-center items-center">
+      <div className="bg-gray-400 rounded-md px-6 flex justify-center items-center">
         <img src={require("../../src/assets/img/Cart/1.png")} alt="product" />
       </div>
       <div className=" flex justify-between items-center mt-3">

@@ -28,7 +28,7 @@ function App() {
         </div>
 
         {/* Filter section */}
-        <section className="flex px-4 gap-2 mt-6">
+        <section className="flex px-4 gap-2 mt-6 md:hidden">
           <div className="flex items-center justify-evenly  bg-white  rounded-md w-1/2 p-3 shadow-sm">
             <div>
               <svg
@@ -69,15 +69,26 @@ function App() {
           </div>
         </section>
       </header>
+
+      <div className="grid grid-cols-12 grid-row-[55px_minmax(500px,_1fr)] md:gap-4 md:mt-6 ">
+        <div className="md:block hidden  rounded-md  bg-white p-4 col-span-3 row-span-2 ">
+          sidebar
+        </div>
+        <div className="md:block md:ml-4 rounded-md hidden bg-white p-4 col-span-9  ">
+          sort
+        </div>
+        <div className=" md:pl-4 col-span-12 md:col-span-9 ">
+          <section className="mt-6 md:mt-0 md:mt-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2  md:gap-4 px-4 md:px-0">
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+          </section>
+        </div>
+      </div>
       {/* Products */}
-      <section className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-4">
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-      </section>
     </div>
   );
 }
